@@ -4,10 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assesment - 2</title>
+    <title>Portfolio Website</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            Portfolio
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/index.html" id="home-link" data-link>Home</a></li>
+            <li><a href="/index.html/about" id="about-link" data-link>About Me</a></li>
+            <li><a href="/index.html/services" id="services-link" data-link>Services</a></li>
+            <li><a href="/index.html/portfolio" id="portfolio-link" data-link>Portfolio</a></li>
+            <li><a href="/index.html/contact" id="contact-link" data-link>Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="header">
+        <header>
+            <div class="container">
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hii I am <span>Rishi</span> <br> From India.</h1>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/user.png" alt="UserImage">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at magnam omnis porro mollitia aperiam veritatis unde, illo autem perferendis pariatur amet, placeat magni ipsa dolore labore. Sequi, beatae! Vel.
+                        Atque omnis nisi quisquam molestiae doloremque voluptas distinctio, rerum maiores iure cum inventore natus necessitatibus corporis mollitia cumque a nihil. A facilis suscipit fugit ratione cumque, vitae quibusdam voluptas illo.
+                        Dicta, architecto? Modi culpa aperiam, deserunt quisquam, dolorum inventore quod beatae laudantium, quam necessitatibus repellat ut? Consequatur ullam odit, libero eum, eligendi officiis harum cupiditate temporibus accusamus, expedita eius dignissimos.
+                    </p>
+                    <div class="tab-titles d-flex">
+                        <p class="tab-links active-link" id="active-skills">Skills</p>
+                        <p class="tab-links" id="active-experience">Experience</p>
+                        <p class="tab-links" id="active-education">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interface</li>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <li><span>Api Development</span> <br>Rest-Full Apis development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span> <br>Globalvox Associate Software Developer</li>
+                            <li><span>2020 - 2021</span> <br>Freelancer in Wordpress</li>
+                            <li><span>2019 - 2020</span> <br>Fiver</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span> <br> MCA from GLS </li>
+                            <li><span>2016</span> <br>BCA from LJ</li>
+                            <li><span>2014</span> <br>12th from SSIS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Service Section -->
+    <section id="service">
+        <div class="container">
+            <h1 class="sub-title">
+                Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, a necessitatibus expedita tempore placeat consequuntur fuga corrupti eaque ipsam excepturi! Provident accusantium rem perspiciatis dolore quisquam aperiam deleniti illo labore!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, a necessitatibus expedita tempore placeat consequuntur fuga corrupti eaque ipsam excepturi! Provident accusantium rem perspiciatis dolore quisquam aperiam deleniti illo labore!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>API Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, a necessitatibus expedita tempore placeat consequuntur fuga corrupti eaque ipsam excepturi! Provident accusantium rem perspiciatis dolore quisquam aperiam deleniti illo labore!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
     
+    <!-- Portfolio Section-->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="d-flex justify-content-between margin-top-50">
+                <div class="work d-flex flex-column justify-content-between">
+                    <div class="work-img">
+                        <img src="./assets/images/work-1.png" alt="work-1">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="project-title">Bubble Game</h3>
+                        <p class="project-desc">This game will improve your typing speed. As you play the level will keep getting difficult</p>
+                        <div class="project-links">
+                            <a href="#" class="project-github">Github</a>
+                            <a href="#" class="project-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work d-flex flex-column justify-content-between">
+                    <div class="work-img">
+                        <img src="./assets/images/work-2.png" alt="work-1">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="project-title">Lexeon</h3>
+                        <p class="project-desc">Chaining project where you can reffer and earn.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-github">Github</a>
+                            <a href="#" class="project-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work d-flex flex-column justify-content-between">
+                    <div class="work-img">
+                        <img src="./assets/images/work-3.png" alt="work-1">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="project-title">Canvas Crop Image</h3>
+                        <p class="project-desc">You can upload image to canvas and crop it as you like then you also have download</p>
+                        <div class="project-links">
+                            <a href="#" class="project-github">Github</a>
+                            <a href="#" class="project-visit-site">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End-->
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">
+                Contact Me
+            </h1>
+            <div class="margin-top-50 row">
+                <div class="col-4 conatct-details">
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i> <span class="font-size-20 email">rishi.patel@globalvoxinc.com</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i> <span class="font-size-20 mobile-number">9173165257</span>
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                </div>
+                <div class="col-8">
+                    <form class="d-flex flex-column gap-3">
+                        <input type="text" name="user-name" id="user-name" placeholder="Your name" required>
+                        <input type="email" name="user-email" id="user-email" placeholder="Your Email" required>
+                        <textarea name="user-message" id="user-message" cols="10" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="send-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section Ends -->
+
+    
+    <section id="footer">
+        <div class="d-flex justify-content-center">
+            <p>@Copyright By:<u>KillerRP</u></p>
+        </div>
+    </section>
+
+    <div id="app"></div>
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/69415afbfc.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
